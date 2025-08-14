@@ -6,9 +6,9 @@ vim.g.codeium_os = "Darwin"
 vim.g.codeium_arch = "arm64"
 
 -- 🔧 Global indentation settings (4 spaces)
-vim.opt.tabstop = 4      -- Number of spaces that a <Tab> counts for
-vim.opt.softtabstop = 4  -- Number of spaces inserted/deleted with <Tab>/<BS>
-vim.opt.shiftwidth = 4   -- Number of spaces for autoindent
+vim.opt.tabstop = 4 -- Number of spaces that a <Tab> counts for
+vim.opt.softtabstop = 4 -- Number of spaces inserted/deleted with <Tab>/<BS>
+vim.opt.shiftwidth = 4 -- Number of spaces for autoindent
 vim.opt.expandtab = true -- Use spaces instead of tabs
 
 -- no comments on new lines
@@ -25,12 +25,13 @@ vim.g.lazyvim_python_ruff = "ruff"
 -- Invert the cursor
 vim.opt.guicursor = {
   "n-v-c:block-Cursor",
-  "i-ci-ve:ver25-Cursor",
-  "r-cr:hor20-Cursor",
-  "o:hor50-Cursor",
+  "i-ci-ve:ver25",
+  "r-cr:hor20",
+  "o:hor50",
   "a:blinkon0",
 }
 
+-- Define the Cursor highlight with reverse colors
 vim.api.nvim_set_hl(0, "Cursor", { reverse = true })
 
 -- 📈 SQL
