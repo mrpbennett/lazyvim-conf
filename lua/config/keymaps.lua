@@ -4,6 +4,9 @@
 vim.keymap.set("i", "jj", "<Esc>", { noremap = false })
 vim.keymap.set("i", "jk", "<Esc>", { noremap = false })
 
+-- autoindent in insert mode
+vim.keymap.set("i", "<CR", "<C-o>0<CR>", { noremap = true })
+
 -- Move current line or selected block down/up in normal and visual modes
 vim.keymap.set("n", "<A-j>", ":m .+1<CR>==", { desc = "Move line down" })
 vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", { desc = "Move line up" })
