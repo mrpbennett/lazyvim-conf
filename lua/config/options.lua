@@ -10,6 +10,7 @@ vim.opt.tabstop = 4 -- Number of spaces that a <Tab> counts for
 vim.opt.softtabstop = 4 -- Number of spaces inserted/deleted with <Tab>/<BS>
 vim.opt.shiftwidth = 4 -- Number of spaces for autoindent
 vim.opt.expandtab = true -- Use spaces instead of tabs
+vim.o.timeoutlen = 300 -- time (ms) to wait for mapped sequence to complete
 
 -- no comments on new lines
 vim.opt.formatoptions:remove("c") -- Don't auto-comment new lines
