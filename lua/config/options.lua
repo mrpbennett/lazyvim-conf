@@ -8,7 +8,7 @@
 -- 🔧 Global indentation settings (4 spaces)
 vim.opt.tabstop = 4 -- Number of spaces that a <Tab> counts for
 vim.opt.softtabstop = 4 -- Number of spaces inserted/deleted with <Tab>/<BS>
-vim.opt.shiftwidth = 4 -- Number of spaces for autoindent
+
 vim.opt.expandtab = true -- Use spaces instead of tabs
 vim.o.timeoutlen = 300 -- time (ms) to wait for mapped sequence to complete
 
@@ -40,5 +40,5 @@ vim.g.dbs = {
   {
     name = "local",
     url = "postgresql://postgres:password@localhost:5432/postgres",
-  },
+  }
 }

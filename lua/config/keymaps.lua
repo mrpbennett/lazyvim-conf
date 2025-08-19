@@ -4,6 +4,8 @@
 vim.keymap.set("i", "jj", "<Esc>", { noremap = false })
 vim.keymap.set("i", "jk", "<Esc>", { noremap = false })
 
+vim.keymap.set("n", "aa", "A", { noremap = false }) -- Pressing 'aa' in normal mode will take you to the end of the line in insert mode
+
 -- autoindent in insert mode
 vim.keymap.set("i", "<CR", "<C-o>0<CR>", { noremap = true })
 
