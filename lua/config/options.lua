@@ -35,6 +35,9 @@ vim.opt.guicursor = {
 -- Define the Cursor highlight with reverse colors
 vim.api.nvim_set_hl(0, "Cursor", { reverse = true })
 
+-- Disable swap
+vim.opt.swapfile = false
+
 -- 📈 SQL
 vim.g.dbs = {
   {
